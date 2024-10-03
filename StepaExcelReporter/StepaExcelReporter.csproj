@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\icons8-add-file-100.png" />
+    <None Remove="Icons\icons8-archive-folder-100.png" />
+    <None Remove="Icons\icons8-arrow-left-100.png" />
+    <None Remove="Icons\icons8-arrow-right-100.png" />
+    <None Remove="Icons\icons8-excel-100.png" />
+    <None Remove="Icons\icons8-filter-100.png" />
+    <None Remove="Icons\icons8-opened-folder-100.png" />
+    <None Remove="Icons\icons8-pdf-100.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\icons8-add-file-100.png" />
+    <Resource Include="Icons\icons8-archive-folder-100.png" />
+    <Resource Include="Icons\icons8-arrow-left-100.png" />
+    <Resource Include="Icons\icons8-arrow-right-100.png" />
+    <Resource Include="Icons\icons8-excel-100.png" />
+    <Resource Include="Icons\icons8-filter-100.png" />
+    <Resource Include="Icons\icons8-opened-folder-100.png" />
+    <Resource Include="Icons\icons8-pdf-100.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="SpreadsheetLight" Version="3.5.0" />
+  </ItemGroup>
+
+</Project>
